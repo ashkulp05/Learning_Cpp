@@ -12,6 +12,8 @@ To install C++, I chose to use the VSCode programming environment. This is for s
 
 There are two ways I found to run C++ code in VSCode. First, my preferred way is to select the run (triangle/play) button at the top of the screen and from the drop down menu of options, select “Run Code”. This allows you to view any output in the terminal. Secondly, you can view output in the debug console, if you select “Run C/C++ file” and then select the option labeled “C/C++ : g++ build and debug active file”. 
 
+*To try this out, try running the file named 'HelloWorld.cpp' that is in this repository. If the words 'Hello World!' show up in your terminal, you know you did it correctly!* 
+
 ### To Comment In C++ in VSCode
 
 The two ways to comment in C++ are first, for a single line, “//”. For a multiline comment “/* … */”.
