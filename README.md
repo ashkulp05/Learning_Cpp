@@ -18,10 +18,27 @@ There are two ways I found to run C++ code in VSCode. First, my preferred way is
 
 The two ways to comment in C++ are first, for a single line, “//”. For a multiline comment “/* … */”.
 
+# Part Two: Data Types and Naming Conventions in C++
+
+In C++, variables have certain naming conventions that should be followed in order for your code to run and be readable by other programmers. First, it is important to note that to initialize a variable in C++, you must first declare the variable type. 
+The code to initialize a variable looks like this: “*type variableName = value;*” ⁷.
+The standard naming conventions for variables in C++ are as follows: first, the first character of the variable name should always be a lowercase letter of the alphabet. Following this can be any digit or alphabet letter, or an underscore character. 
+
+There are also a number of reserved words in C++ that can or should not be used for names. A list of such characters can be found here: https://en.cppreference.com/w/cpp/keyword. 
+
+## Some information about how C++ is typed
+There is some discourse and disagreement on what type of programming language C++ is. However, here I will go with the more popular opinion. That is, that C++ is a statically, explicitly and strongly typed language. This opinion comes about because C++ requires variables to have a type when initialized, and that type must be explicitly declared. C++ is a statically bound language because values are bound at the compilation stage, instead of the runtime stage. Additionally, all variables in C++ are by default mutable, which means that they can be changed. There are certain keywords that can be used to make a variable mutable in C++ but they have to be added by the programmer. 
+
+C++ uses all the typical operators for data types, such as the addition operator(+), subtraction (-), etc. It also has an operator (%) which returns the remainder of integer division⁸. C++ allows for implicit type conversion- which means that if you try to do an operation with two or more differently typed variables, it will convert them all into one variable⁹. For example, if you want to divide an integer by a float, it will perform the operation and interpret the result as a float. 
+
 #### SOURCES:
-1. https://cplusplus.com/info/history/
-2. https://www.perforce.com/blog/qac/misra-cpp-history
-3. https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for/
-4. https://www.codecademy.com/learn/learn-c-plus-plus?utm_source=ccblog&utm_medium=ccblog&utm_campaign=ccblog&utm_content=what_is_c_plus_plus_used_for_blog
-5. https://www.youtube.com/watch?v=Qw5qjRNlC-Y
-6. https://code.visualstudio.com/docs/languages/cpp
+https://cplusplus.com/info/history/
+https://www.perforce.com/blog/qac/misra-cpp-history
+https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for/
+https://www.codecademy.com/learn/learn-c-plus-plus?utm_source=ccblog&utm_medium=ccblog&utm_campaign=ccblog&utm_content=what_is_c_plus_plus_used_for_blog
+https://www.youtube.com/watch?v=Qw5qjRNlC-Y
+https://code.visualstudio.com/docs/languages/cpp
+https://www.w3schools.com/cpp/cpp_variables.asp#:~:text=Declaring%20(Creating)%20Variables&text=type%20variableName%20%3D%20value%3B,assign%20values%20to%20the%20variable.
+https://www.geeksforgeeks.org/operators-in-cpp/
+https://www.cs.mtsu.edu/~xyang/2170/typeConversion.html
+
