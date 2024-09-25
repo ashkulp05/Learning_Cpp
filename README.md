@@ -31,6 +31,9 @@ There is some discourse and disagreement on what type of programming language C+
 
 C++ uses all the typical operators for data types, such as the addition operator(+), subtraction (-), etc. It also has an operator (%) which returns the remainder of integer division⁸. C++ allows for implicit type conversion- which means that if you try to do an operation with two or more differently typed variables, it will convert them all into one variable⁹. For example, if you want to divide an integer by a float, it will perform the operation and interpret the result as a float. 
 
+## Code Resource!
+In the file labeled Using_Variables.cpp, there are examples of how to initialize variables of different types, and trials of different operations you can use to demonstrate how c++ handles type conversion. 
+
 #### SOURCES:
 1. https://cplusplus.com/info/history/
 2. https://www.perforce.com/blog/qac/misra-cpp-history
