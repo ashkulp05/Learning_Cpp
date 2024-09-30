@@ -21,7 +21,9 @@ The two ways to comment in C++ are first, for a single line, “//”. For a mul
 # Part Two: Data Types and Naming Conventions in C++
 
 In C++, variables have certain naming conventions that should be followed in order for your code to run and be readable by other programmers. First, it is important to note that to initialize a variable in C++, you must first declare the variable type. 
-The code to initialize a variable looks like this: “*type variableName = value;*” ⁷.
+The code to initialize a variable looks like this: 
+“*type variableName = value;*” ⁷.
+
 The standard naming conventions for variables in C++ are as follows: first, the first character of the variable name should always be a lowercase letter of the alphabet. Following this can be any digit or alphabet letter, or an underscore character. 
 
 There are also a number of reserved words in C++ that can or should not be used for names. A list of such characters can be found here: https://en.cppreference.com/w/cpp/keyword. 
