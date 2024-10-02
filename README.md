@@ -19,17 +19,42 @@ There are two ways I found to run C++ code in VSCode. First, my preferred way is
 The two ways to comment in C++ are first, for a single line, “//”. For a multiline comment “/* … */”.
 
 # Part Two: Data Types and Naming Conventions in C++
-
 In C++, variables have certain naming conventions that should be followed in order for your code to run and be readable by other programmers. First, it is important to note that to initialize a variable in C++, you must first declare the variable type. 
-The code to initialize a variable looks like this: 
-“*type variableName = value;*” ⁷.
+The code to initialize a variable looks like this:
+ *“type variableName = value;” ⁷.*
+Generally, the variable types that you see in C++ are the same as the ones you would see in any other common programming languages such as python. However, one important variable that is not commonly found in other languages is called a pointer variable.
+### A note about pointers 
+In C++, there is a special variable type called a pointer, which stores addresses in memory. So, for example, if a variable is initialized as
+int x = 7; 
+then,
+int * pntr_y = &x;   would create a pointer variable that stores the address of the variable x which contains the integer 7.
+(& is the character used to convert a variable into it's address form)
 
-The standard naming conventions for variables in C++ are as follows: first, the first character of the variable name should always be a lowercase letter of the alphabet. Following this can be any digit or alphabet letter, or an underscore character. 
+### And a note about arrays
+In C++, arrays are initialized with the code:
+*type* variable_name[size of array];
+ex. string varArray[4];
 
+When C++ creates an array object, what it is really doing is putting a pointer that points to the start of the array in a variable. Therefore, varArray from our example contains the address of the start of the array. This formatting is not uncommon in most coding languages HOWEVER because C++ has pointer variables, this can cause some problems when it comes to changing the contents of an array.
+More specifically, if you have a pointer variable that points at the same slot in memory as the start of the array, you could change the value stored in the memory through the pointer, and unintentionally change the value stored in the array at the same time. 
+
+### The standard naming conventions for variables in C++ are as follows:
+The first character of the variable name should always be a lowercase letter of the alphabet. Following this can be any digit or alphabet letter, or an underscore character. 
+If the variable type is a pointer, it is convention that the variable begins with p_ or pntr_.
 There are also a number of reserved words in C++ that can or should not be used for names. A list of such characters can be found here: https://en.cppreference.com/w/cpp/keyword. 
 
 ## Some information about how C++ is typed
-There is some discourse and disagreement on what type of programming language C++ is. However, here I will go with the more popular opinion. That is, that C++ is a statically, explicitly and strongly typed language. This opinion comes about because C++ requires variables to have a type when initialized, and that type must be explicitly declared. C++ is a statically bound language because values are bound at the compilation stage, instead of the runtime stage. Additionally, all variables in C++ are by default mutable, which means that they can be changed. There are certain keywords that can be used to make a variable mutable in C++ but they have to be added by the programmer. 
+There is some discourse and disagreement on exactly what type of programming language C++ is. 
+However, here I will explain the more popular opinion. That is, that C++ is a statically, explicitly and strongly typed language. C++ is considerewd an explicitly typed language because it requires variables to have a type when initialized, and that type must be explicitly declared.
+As an example, to declare an integer in c++, the code looks like this:
+int varInt = 7;
+In this example, the variable varInt can only contain an integer value. 
+
+C++ is a statically bound language because values are bound at the compilation stage, instead of the runtime stage. Additionally, all variables in C++ are by default mutable, which means that they can be changed. 
+An example of this would be if you take varInt, from above and run the code:
+varInt = 9;
+The integer stored in varInt will change from 7 to 9.
+There do exist certain keywords that can be used to make a variable immutable in C++ but they have to be added by the programmer. 
 
 C++ uses all the typical operators for data types, such as the addition operator(+), subtraction (-), etc. It also has an operator (%) which returns the remainder of integer division⁸. C++ allows for implicit type conversion- which means that if you try to do an operation with two or more differently typed variables, it will convert them all into one variable⁹. For example, if you want to divide an integer by a float, it will perform the operation and interpret the result as a float. 
 
