@@ -38,6 +38,29 @@ ex. string varArray[4];
 When C++ creates an array object, what it is really doing is putting a pointer that points to the start of the array in a variable. Therefore, varArray from our example contains the address of the start of the array. This formatting is not uncommon in most coding languages HOWEVER because C++ has pointer variables, this can cause some problems when it comes to changing the contents of an array.
 More specifically, if you have a pointer variable that points at the same slot in memory as the start of the array, you could change the value stored in the memory through the pointer, and unintentionally change the value stored in the array at the same time. 
 
+Example in code of using pointers and arrays:
+// this code is by asha kulp
+// sources from https://www.w3schools.com/cpp/default.asp
+
+// always start with this code to import library with standard terms
+#include <iostream>
+#include <map>
+using namespace std;
+// then open a main function to code in
+int main(){
+    int x = 7;
+    int trialArray[3] = {1,2,3};\
+    int* pntr_atArray = &x;
+
+    cout<<"The array starts at place in memory: "<<trialArray<<endl;
+    cout<< "The pointer points at: "<<pntr_atArray<<endl;
+    cout<<"the array contains: "<<trialArray[0]<<trialArray[1]<<trialArray[2]<<endl;
+    cout<<"the number the pointer points at is: "<<*pntr_atArray<<endl;
+    pntr_atArray = trialArray;
+    cout<<"When you change the value that pntr_atArray points to from *x to trialArray, the address of the pointer is:"<<pntr_atArray<<endl;
+    cout<<"The number the pointer points at is: "<<*pntr_atArray<<endl;
+}
+
 ### The standard naming conventions for variables in C++ are as follows:
 The first character of the variable name should always be a lowercase letter of the alphabet. Following this can be any digit or alphabet letter, or an underscore character. 
 If the variable type is a pointer, it is convention that the variable begins with p_ or pntr_.
