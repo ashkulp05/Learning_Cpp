@@ -21,3 +21,8 @@ Read more: https://www.w3schools.com/cpp/cpp_functions_recursion.asp
 
 What are the scoping rules in C++?
 In C++, global variables can be accessed within any function as long as there wasn't a variable of the same name more recently defined. You can change the value of a local variable inside a function, but the scope of any changes will be confined to the function and will not continue once the function is exited. For further information, check out the file labeled demonstratingFunctions.cpp, and pay attention to the comments that are pointing out scoping issues. 
+
+## Code example and important resources:
+Please check out the code example attatched to this branch to see examples of creating and calling functions, returning different data types (including arrays which are complicated!), and using recursive functions. The code also demonstrates how scope works in C++ and proves that C++ is a pass-by-value language!
+
+I also highly recommend checking out https://www.w3schools.com/cpp/cpp_functions.asp for an indepth guide on creating functions! 
