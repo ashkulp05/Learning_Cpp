@@ -13,13 +13,13 @@ else{code to be run if true};
 C++ also allows a switch statement. The syntax for those types of statements is as follows:
 
 switch(some expression){
-	Case (some value that the expression must be):
+Case (some value that the expression must be):
 		Code to be run
-		break;
-	Case (some other value that the expression must be):
+  		break;
+Case (some other value that the expression must be):
 		Code to be run
-		break;
-	Default: *(if no cases apply) and is optional*
+  		break;
+    Default: *(if no cases apply) and is optional*
 }
 ## How to write loops in C++
 ### For Loops
@@ -40,6 +40,7 @@ Alternatively, to initialize the Do-While loop,
 
 Do{ code }
 While (condition);
+
 The primary difference between these two potential loops it that a while loop will only execute the code in the brackets if the condition is true, whereas a do-while loop will execute the code once, and then continue to execute it if the condition continues to be true. 
 ## How do boolean expressions work in C++
 In C++, the boolean operators are true(1) and false(0). Essentially, if you set a bool variable equal to True (as you see done in the code example), and print the variable, you will see a one. This means that in C++, you can do mathematical operations with bools!
