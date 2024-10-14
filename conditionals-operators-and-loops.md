@@ -5,11 +5,13 @@ In this section, I will go over the ways that you can use C++ for selection, loo
 ### If-Else Statements 
 In C++, you can use the terms if, else if, and else to create conditional statements that perform certain actions as long as the terms laid out are true.
 The notation in C++ is very similar to in Java. Generally, the format for if/else statements is as follows:
+
 if/else if(true/false condition){ code to be run if true};
 else{code to be run if true};
 
 ### Switch statements
 C++ also allows a switch statement. The syntax for those types of statements is as follows:
+
 switch(some expression){
 	Case (some value that the expression must be):
 		Code to be run
@@ -22,6 +24,7 @@ switch(some expression){
 ## How to write loops in C++
 ### For Loops
 When you know exactly when you want your loop to start and end, you can use a for loop. In C++, a for loop is initialized in the same way as it is in java:
+
 for(initialization of counter variable; condition using counter variable; change of the counter variable){
 Code to run while in the loop
 }
@@ -29,10 +32,12 @@ To make this more clear, please reference the example of a for loop in the code 
 ### While Loops
 While loops in C++ have two variants- first, the traditional while loop, and secondly the do/while loop. 
 To initialize the while loop,  use the following syntax:
+
 while(condition){
 Code to run if condition is true
 }
 Alternatively, to initialize the Do-While loop,
+
 Do{ code }
 While (condition);
 The primary difference between these two potential loops it that a while loop will only execute the code in the brackets if the condition is true, whereas a do-while loop will execute the code once, and then continue to execute it if the condition continues to be true. 
