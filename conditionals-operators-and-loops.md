@@ -47,12 +47,9 @@ In C++, the boolean operators are true(1) and false(0). Essentially, if you set 
 ## Short-Circuit Evaluation in C++
 To understand short-circuit evaluation in C++, please run the following code (also included in the code example labeled demonstratingSelectionandLoops.cpp). Note how in the first if statement, C++ runs both funct1 and funct2, whereas in the second else if statement, C++ only runs funct2 and then skips to the else statement. 
 
-`//if/elif/else statements and short-circuit logic
-
+```//if/elif/else statements and short-circuit logic
 // create two functions that return true and false respectively
-
 if (funct1() && funct2()){ //true and then false
-
 cout<<"never true"<<endl;
 }
 else if (funct2() && funct1()){
@@ -60,5 +57,5 @@ cout<<"also never true but prints something different";
 }
 else{
 cout<<"C++ uses short-circut programming, and you can see that when the first element of an && statement is false, it does not evaluate the second statement."<<endl;
-}`
+}```
 
