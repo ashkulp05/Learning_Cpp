@@ -33,7 +33,7 @@ Historically, C and C++ did not have built-in methods to create classes and obje
 ## Naming conventions and Standard Classes 
 Similarities between C++ and other programming languages include the naming conventions for objects (which are the same as variables in C++), classes(which should start with a capitalized letter), and methods(that are used in the same way as functions outside of classes). C++ also utilizes a built-in constructor method that is always exactly the name of the class. In the code example, the constructor for the Person class looks like this:
 
-'''
+```
 class Person { //the class
 //specificy access: public means that it can be accessed outside of the code block
 public:
@@ -45,7 +45,7 @@ Person(int a, string n){
 age = a;
 name = n;
 }
-'''
+```
 Notably, C++ does not have a built in function to allow information about an object to be printed, such as the toString() method in Java or the __str__ method in python. 
 ##Inheritance in C++
 C++ classes can utilize inheritance from other classes using several methods. In the code example, you see that the Student class inherits from the Person class: 
