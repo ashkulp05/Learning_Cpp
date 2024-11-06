@@ -54,7 +54,9 @@ class Student: public Person
 {}
 ```
  But it also adds additional attributes and methods including its own constructor class. In C++, a class can inherit from just one or multiple classes. If you call a function that is named in more than one class, it will default to the class of the object that was called. As long as a class method is public, any other class that inherits from it can call that method. 
+
+
 Sources:
-https://www.w3schools.com/cpp/cpp_oop.asp
-https://www.programiz.com/cpp-programming/oop
+1. https://www.w3schools.com/cpp/cpp_oop.asp
+2. https://www.programiz.com/cpp-programming/oop
 
