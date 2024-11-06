@@ -49,10 +49,10 @@ name = n;
 Notably, C++ does not have a built in function to allow information about an object to be printed, such as the toString() method in Java or the __str__ method in python. 
 ##Inheritance in C++
 C++ classes can utilize inheritance from other classes using several methods. In the code example, you see that the Student class inherits from the Person class: 
-'''
+```
 class Student: public Person
 {}
-'''
+```
  But it also adds additional attributes and methods including its own constructor class. In C++, a class can inherit from just one or multiple classes. If you call a function that is named in more than one class, it will default to the class of the object that was called. As long as a class method is public, any other class that inherits from it can call that method. 
 Sources:
 https://www.w3schools.com/cpp/cpp_oop.asp
