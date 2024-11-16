@@ -39,7 +39,7 @@ When C++ creates an array object, what it is really doing is putting a pointer t
 More specifically, if you have a pointer variable that points at the same slot in memory as the start of the array, you could change the value stored in the memory through the pointer, and unintentionally change the value stored in the array at the same time. 
 
 Example in code of using pointers and arrays:
-// this code is by asha kulp
+```// this code is by asha kulp
 // sources from https://www.w3schools.com/cpp/default.asp
 
 // always start with this code to import library with standard terms
@@ -59,7 +59,7 @@ int main(){
     pntr_atArray = trialArray;
     cout<<"When you change the value that pntr_atArray points to from *x to trialArray, the address of the pointer is:"<<pntr_atArray<<endl;
     cout<<"The number the pointer points at is: "<<*pntr_atArray<<endl;
-}
+}```
 
 ### The standard naming conventions for variables in C++ are as follows:
 The first character of the variable name should always be a lowercase letter of the alphabet. Following this can be any digit or alphabet letter, or an underscore character. 
