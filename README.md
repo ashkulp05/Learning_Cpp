@@ -156,6 +156,16 @@ To understand short-circuit evaluation in C++, please run the following code (al
 
 ```//if/elif/else statements and short-circuit logic
 // create two functions that return true and false respectively
+bool funct1 (){
+    bool truth = true;
+    cout<<"f1 is true"<<endl;
+    return truth;
+}
+bool funct2 (){
+    bool truth = false;
+    cout<<"f2 is false"<<endl;
+    return truth;
+}
 if (funct1() && funct2()){ //true and then false
 cout<<"never true"<<endl;
 }
