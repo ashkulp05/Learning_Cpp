@@ -70,7 +70,7 @@ There are also a number of reserved words in C++ that can or should not be used 
 
 ## Some information about how C++ is typed
 There is some discourse and disagreement on exactly what type of programming language C++ is. 
-However, here I will explain the more popular opinion. That is, that C++ is a statically, explicitly and strongly typed language. C++ is considerewd an explicitly typed language because it requires variables to have a type when initialized, and that type must be explicitly declared.
+However, here I will explain the more popular opinion. That is, that C++ is a statically, explicitly and strongly typed language. C++ is considered an explicitly typed language because it requires variables to have a type when initialized, and that type must be explicitly declared.
 As an example, to declare an integer in c++, the code looks like this:
 int varInt = 7;
 In this example, the variable varInt can only contain an integer value. 
